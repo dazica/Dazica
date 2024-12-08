@@ -686,6 +686,15 @@ h6 {
   text-decoration: none;
 }
 
+#usefulLinks{
+  margin-left: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  #usefulLinks{
+    margin-left: 0;
+  }
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
