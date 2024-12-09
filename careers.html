@@ -27,6 +27,53 @@
   <!-- Main CSS File -->
   <link href="./assets/css/main.css" rel="stylesheet">
 
+<!-- Bootstrap Icons for Location -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Adding Some Additional Styles -->
+<style>
+    .job-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.527);
+    }
+    .modal-header {
+      background-color: #006b9c;
+    }
+    .modal-body {
+      font-size: 1rem;
+    }
+    .modal-body form input,
+    .modal-body form button {
+      border-radius: 0.375rem;
+    }
+    .modal-body form .btn-primary {
+      padding: 10px 20px;
+      font-size: 1.1rem;
+    }
+    .modal-dialog {
+      max-width: 800px;
+    }
+    .btn-outline-primary {
+      border: 1px solid #00084d;
+      color: #00084d;
+    }
+    .btn-outline-primary:hover {
+      background-color: #00084d;
+      color: #fff;
+    }
+    .card-body{
+        margin: 30px;
+    }
+  </style>
+  
+<script>
+     function securityForm() {
+        // Open the link in a new tab
+        window.open("https://forms.gle/suQN3ABsvvL1ZnPr8", "_blank");
+        
+        // Reload the parent page
+        location.reload();
+    }
+</script>
 </head>
 
 <body class="careers-page">
@@ -72,389 +119,105 @@
         <!-- Career Opportunities Section -->
         <section id="career-opportunities" class="career-opportunities section">
             <div class="container">
-                <h2>Open Vacancies</h2>
-                <p>Join our team and help us empower businesses with exceptional support and robust cybersecurity solutions.</p>
+                <h2>Open Positions</h2>
+                <p>Join our team and help us empower businesses with exceptional support and robust cybersecurity solutions.</p><br><br>
 
 <div class="row gy-4">
 <!-- Job Card with Modal Trigger -->
 <div class="col-lg-4">
-  <div class="job-card" data-bs-toggle="modal" data-bs-target="#jobModal1">
-      <h3>Web Developer</h3>
-      <p>Location: Remote</p>
-      <p>Responsibilities: Develop and maintain web applications.</p>
-      <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-      <a href="#" class="btn btn-primary">Apply Now</a>
+    <div class="job-card border shadow-sm rounded p-4 mb-4" style="transition: transform 0.3s ease, box-shadow 0.3s ease;">
+      <h3 class="h5 text-primary mb-3">Cybersecurity Architect</h3>
+      <p class="text-muted"><i class="bi bi-geo-alt"></i> Location: <strong>Noida</strong></p>
+      <p><strong>No. of Positions:</strong> 01</p>
+      <p><strong>Responsibilities:</strong> 
+        <ul>
+            <li><strong>Design Security Architecture:</strong> Develop and implement security frameworks, protocols, and systems to protect 
+                the organization's networks and data from internal and external threats.
+            </li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#jobModal1">Read more...</a>
+        </ul>
+        </p>
+      <p><strong>Requirements:</strong>
+    <ul>
+        <li>Bachelor’s degree in Computer Science, Information Security, or a related field. Master’s degree preferred.</li>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#jobModal1">Read more...</a>
+    </ul>
+    </p>
+      <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#jobModal1">Apply Now</a>
+    </div>
   </div>
-</div>
-
-<!-- Job Details Modal -->
-<div class="modal fade" id="jobModal1" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  
+  <!-- Job Details Modal -->
+  <div class="modal fade" id="jobModal1" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="jobModalLabel">Web Developer</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p><strong>Location:</strong> Remote</p>
-              <p><strong>Responsibilities:</strong> Develop and maintain web applications, collaborate with designers and stakeholders.</p>
-              <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-              <form method="post" action="https://script.google.com/macros/s/AKfycby2ck-gSFxx7XPQw6DQlnsR1JUB4dNO0nCfciMkw4bHNuhVHRtk01cOnjZTf1jvqg5X/exec">
-                  <div class="mb-3">
-                      <label for="applicantName" class="form-label">Your Name</label>
-                      <input type="text" class="form-control" id="applicantName" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="applicantEmail" class="form-label">Your Email</label>
-                      <input type="email" class="form-control" id="applicantEmail" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="resume" class="form-label">Upload Resume</label>
-                      <input type="file" class="form-control" id="resume" required>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit Application</button>
-              </form>
-          </div>
+        <div class="modal-header text-white">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="card-body">
+            <h2>Job Title: Cybersecurity Architect</h2>
+            <p><strong>Location:</strong> Noida</p>
+            
+            <h3>Job Role:</h3>
+            <p>The Cybersecurity Architect is responsible for designing and implementing robust security infrastructures to protect an organization’s information systems. This role involves collaborating with IT teams to identify potential vulnerabilities, create security policies, and oversee the deployment of cybersecurity measures. The Cybersecurity Architect ensures that all systems, networks, and applications are secure from cyber threats while maintaining compliance with industry standards.</p>
+            
+            <h3>Key Responsibilities:</h3>
+            <ul>
+                <li><strong>Design Security Architecture:</strong> Develop and implement security frameworks, protocols, and systems to protect the organization's networks and data from internal and external threats.</li>
+                <li><strong>Risk Assessment and Mitigation:</strong> Identify potential security threats through regular assessments and vulnerability scanning, and propose solutions to mitigate these risks.</li>
+                <li><strong>Collaboration with IT and Development Teams:</strong> Work closely with IT, network, and software development teams to integrate security measures into applications, networks, and systems.</li>
+                <li><strong>Policy Development:</strong> Design and enforce security policies, guidelines, and procedures to safeguard the organization’s infrastructure.</li>
+                <li><strong>Security Incident Management:</strong> Oversee the response to security incidents, including data breaches, and lead the investigation and resolution efforts.</li>
+                <li><strong>Regulatory Compliance:</strong> Ensure that the organization's security practices comply with relevant regulations, standards, and legal requirements (e.g., GDPR, HIPAA, PCI-DSS).</li>
+                <li><strong>Security Testing and Audits:</strong> Perform regular penetration testing and security audits to detect vulnerabilities and ensure the effectiveness of security systems.</li>
+                <li><strong>Security Training and Awareness:</strong> Conduct security awareness training sessions for staff and ensure adherence to security best practices across the organization.</li>
+                <li><strong>Monitor Emerging Threats:</strong> Stay up-to-date on the latest cybersecurity trends, threats, and technologies to continuously enhance the organization’s security posture.</li>
+                <li><strong>Security Tools Implementation:</strong> Evaluate, implement, and manage advanced security technologies like firewalls, intrusion detection/prevention systems, and encryption tools.</li>
+            </ul>
+            
+            <h3>Requirements:</h3>
+            <h4>Educational Qualifications:</h4>
+            <ul>
+                <li>Bachelor’s degree in Computer Science, Information Security, or a related field. Master’s degree preferred.</li>
+                <li>Professional certifications in cybersecurity such as CISSP (Certified Information Systems Security Professional), CISM (Certified Information Security Manager), or CEH (Certified Ethical Hacker) are highly desirable.</li>
+            </ul>
+            
+            <h4>Technical Skills:</h4>
+            <ul>
+                <li>Strong understanding of cybersecurity principles, network security, risk management, and cloud security.</li>
+                <li>Experience with firewalls, VPNs, IDS/IPS, endpoint protection, encryption, and access control systems.</li>
+                <li>In-depth knowledge of security protocols (e.g., SSL/TLS, SSH) and encryption techniques.</li>
+                <li>Familiarity with common cybersecurity frameworks and standards, including NIST, ISO 27001, and CIS Controls.</li>
+                <li>Proficiency in conducting vulnerability assessments and penetration testing (e.g., using tools like Kali Linux, Nessus, Metasploit).</li>
+            </ul>
+            
+            <h4>Experience:</h4>
+            <ul>
+                <li>At least 5-7 years of experience in cybersecurity or a related field, with at least 3 years in a leadership or architect role.</li>
+                <li>Proven track record of designing, implementing, and maintaining security architectures in complex environments.</li>
+                <li>Experience in securing cloud environments (AWS, Azure, GCP) and managing hybrid infrastructures.</li>
+            </ul>
+            
+            <h4>Soft Skills:</h4>
+            <ul>
+                <li>Excellent problem-solving skills with the ability to think critically and analytically.</li>
+                <li>Strong communication skills to collaborate effectively with technical and non-technical teams.</li>
+                <li>Ability to lead and mentor a team of cybersecurity professionals.</li>
+                <li>Ability to work under pressure and handle high-stress situations such as data breaches or security incidents.</li>
+            </ul>
+            
+            <h4>Desirable:</h4>
+            <ul>
+                <li>Experience with regulatory frameworks (e.g., GDPR, PCI-DSS, HIPAA).</li>
+                <li>Familiarity with DevSecOps practices and integrating security into the software development lifecycle.</li>
+                <li>Understanding of ethical hacking and threat hunting methodologies.</li>
+            </ul>
+            <a href="#"  onclick="securityForm();" class="btn btn-outline-primary btn-sm">Apply Now</a>
+        </div>
+       
       </div>
+    </div>
   </div>
-</div>
-
- <!-- Job Card with Modal Trigger -->
-<div class="col-lg-4">
-  <div class="job-card" data-bs-toggle="modal" data-bs-target="#jobModal1">
-      <h3>Web Developer</h3>
-      <p>Location: Remote</p>
-      <p>Responsibilities: Develop and maintain web applications.</p>
-      <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-      <a href="#" class="btn btn-primary">Apply Now</a>
-  </div>
-</div>
-
-<!-- Job Details Modal -->
-<div class="modal fade" id="jobModal1" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="jobModalLabel">Web Developer</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p><strong>Location:</strong> Remote</p>
-              <p><strong>Responsibilities:</strong> Develop and maintain web applications, collaborate with designers and stakeholders.</p>
-              <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-              <form method="post" action="https://script.google.com/macros/s/AKfycby2ck-gSFxx7XPQw6DQlnsR1JUB4dNO0nCfciMkw4bHNuhVHRtk01cOnjZTf1jvqg5X/exec">
-                  <div class="mb-3">
-                      <label for="applicantName" class="form-label">Your Name</label>
-                      <input type="text" class="form-control" id="applicantName" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="applicantEmail" class="form-label">Your Email</label>
-                      <input type="email" class="form-control" id="applicantEmail" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="resume" class="form-label">Upload Resume</label>
-                      <input type="file" class="form-control" id="resume" required>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit Application</button>
-              </form>
-          </div>
-      </div>
-  </div>
-</div>
-<!-- Job Card with Modal Trigger -->
-<div class="col-lg-4">
-  <div class="job-card" data-bs-toggle="modal" data-bs-target="#jobModal1">
-      <h3>Web Developer</h3>
-      <p>Location: Remote</p>
-      <p>Responsibilities: Develop and maintain web applications.</p>
-      <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-      <a href="#" class="btn btn-primary">Apply Now</a>
-  </div>
-</div>
-
-<!-- Job Details Modal -->
-<div class="modal fade" id="jobModal1" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="jobModalLabel">Web Developer</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p><strong>Location:</strong> Remote</p>
-              <p><strong>Responsibilities:</strong> Develop and maintain web applications, collaborate with designers and stakeholders.</p>
-              <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-              <form method="post" action="https://script.google.com/macros/s/AKfycby2ck-gSFxx7XPQw6DQlnsR1JUB4dNO0nCfciMkw4bHNuhVHRtk01cOnjZTf1jvqg5X/exec">
-                  <div class="mb-3">
-                      <label for="applicantName" class="form-label">Your Name</label>
-                      <input type="text" class="form-control" id="applicantName" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="applicantEmail" class="form-label">Your Email</label>
-                      <input type="email" class="form-control" id="applicantEmail" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="resume" class="form-label">Upload Resume</label>
-                      <input type="file" class="form-control" id="resume" required>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit Application</button>
-              </form>
-          </div>
-      </div>
-  </div>
-</div>
-<!-- Job Card with Modal Trigger -->
-<div class="col-lg-4">
-  <div class="job-card" data-bs-toggle="modal" data-bs-target="#jobModal1">
-      <h3>Web Developer</h3>
-      <p>Location: Remote</p>
-      <p>Responsibilities: Develop and maintain web applications.</p>
-      <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-      <a href="#" class="btn btn-primary">Apply Now</a>
-  </div>
-</div>
-
-<!-- Job Details Modal -->
-<div class="modal fade" id="jobModal1" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="jobModalLabel">Web Developer</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p><strong>Location:</strong> Remote</p>
-              <p><strong>Responsibilities:</strong> Develop and maintain web applications, collaborate with designers and stakeholders.</p>
-              <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-              <form method="post" action="https://script.google.com/macros/s/AKfycby2ck-gSFxx7XPQw6DQlnsR1JUB4dNO0nCfciMkw4bHNuhVHRtk01cOnjZTf1jvqg5X/exec">
-                  <div class="mb-3">
-                      <label for="applicantName" class="form-label">Your Name</label>
-                      <input type="text" class="form-control" id="applicantName" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="applicantEmail" class="form-label">Your Email</label>
-                      <input type="email" class="form-control" id="applicantEmail" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="resume" class="form-label">Upload Resume</label>
-                      <input type="file" class="form-control" id="resume" required>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit Application</button>
-              </form>
-          </div>
-      </div>
-  </div>
-</div>
-<!-- Job Card with Modal Trigger -->
-<div class="col-lg-4">
-  <div class="job-card" data-bs-toggle="modal" data-bs-target="#jobModal1">
-      <h3>Web Developer</h3>
-      <p>Location: Remote</p>
-      <p>Responsibilities: Develop and maintain web applications.</p>
-      <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-      <a href="#" class="btn btn-primary">Apply Now</a>
-  </div>
-</div>
-
-<!-- Job Details Modal -->
-<div class="modal fade" id="jobModal1" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="jobModalLabel">Web Developer</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p><strong>Location:</strong> Remote</p>
-              <p><strong>Responsibilities:</strong> Develop and maintain web applications, collaborate with designers and stakeholders.</p>
-              <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-              <form method="post" action="https://script.google.com/macros/s/AKfycby2ck-gSFxx7XPQw6DQlnsR1JUB4dNO0nCfciMkw4bHNuhVHRtk01cOnjZTf1jvqg5X/exec">
-                  <div class="mb-3">
-                      <label for="applicantName" class="form-label">Your Name</label>
-                      <input type="text" class="form-control" id="applicantName" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="applicantEmail" class="form-label">Your Email</label>
-                      <input type="email" class="form-control" id="applicantEmail" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="resume" class="form-label">Upload Resume</label>
-                      <input type="file" class="form-control" id="resume" required>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit Application</button>
-              </form>
-          </div>
-      </div>
-  </div>
-</div>
-<!-- Job Card with Modal Trigger -->
-<div class="col-lg-4">
-  <div class="job-card" data-bs-toggle="modal" data-bs-target="#jobModal1">
-      <h3>Web Developer</h3>
-      <p>Location: Remote</p>
-      <p>Responsibilities: Develop and maintain web applications.</p>
-      <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-      <a href="#" class="btn btn-primary">Apply Now</a>
-  </div>
-</div>
-
-<!-- Job Details Modal -->
-<div class="modal fade" id="jobModal1" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="jobModalLabel">Web Developer</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p><strong>Location:</strong> Remote</p>
-              <p><strong>Responsibilities:</strong> Develop and maintain web applications, collaborate with designers and stakeholders.</p>
-              <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-              <form method="post" action="https://script.google.com/macros/s/AKfycby2ck-gSFxx7XPQw6DQlnsR1JUB4dNO0nCfciMkw4bHNuhVHRtk01cOnjZTf1jvqg5X/exec">
-                  <div class="mb-3">
-                      <label for="applicantName" class="form-label">Your Name</label>
-                      <input type="text" class="form-control" id="applicantName" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="applicantEmail" class="form-label">Your Email</label>
-                      <input type="email" class="form-control" id="applicantEmail" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="resume" class="form-label">Upload Resume</label>
-                      <input type="file" class="form-control" id="resume" required>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit Application</button>
-              </form>
-          </div>
-      </div>
-  </div>
-</div>
-<!-- Job Card with Modal Trigger -->
-<div class="col-lg-4">
-  <div class="job-card" data-bs-toggle="modal" data-bs-target="#jobModal1">
-      <h3>Web Developer</h3>
-      <p>Location: Remote</p>
-      <p>Responsibilities: Develop and maintain web applications.</p>
-      <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-      <a href="#" class="btn btn-primary">Apply Now</a>
-  </div>
-</div>
-
-<!-- Job Details Modal -->
-<div class="modal fade" id="jobModal1" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="jobModalLabel">Web Developer</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p><strong>Location:</strong> Remote</p>
-              <p><strong>Responsibilities:</strong> Develop and maintain web applications, collaborate with designers and stakeholders.</p>
-              <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-              <form method="POST" action="https://script.google.com/macros/s/AKfycby2ck-gSFxx7XPQw6DQlnsR1JUB4dNO0nCfciMkw4bHNuhVHRtk01cOnjZTf1jvqg5X/exec">
-                  <div class="mb-3">
-                      <label for="applicantName" class="form-label">Your Name1</label>
-                      <input type="text" class="form-control" id="applicantName" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="applicantEmail" class="form-label">Your Email</label>
-                      <input type="email" class="form-control" id="applicantEmail" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="resume" class="form-label">Upload Resume</label>
-                      <input type="file" class="form-control" id="resume" required>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit Application</button>
-              </form>
-          </div>
-      </div>
-  </div>
-</div>
-<!-- Job Card with Modal Trigger -->
-<div class="col-lg-4">
-  <div class="job-card" data-bs-toggle="modal" data-bs-target="#jobModal1">
-      <h3>Web Developer</h3>
-      <p>Location: Remote</p>
-      <p>Responsibilities: Develop and maintain web applications.</p>
-      <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-      <a href="#" class="btn btn-primary">Apply Now</a>
-  </div>
-</div>
-
-<!-- Job Details Modal -->
-<div class="modal fade" id="jobModal1" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="jobModalLabel">Web Developer</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p><strong>Location:</strong> Remote</p>
-              <p><strong>Responsibilities:</strong> Develop and maintain web applications, collaborate with designers and stakeholders.</p>
-              <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-              <form method="post" action="https://script.google.com/macros/s/AKfycby2ck-gSFxx7XPQw6DQlnsR1JUB4dNO0nCfciMkw4bHNuhVHRtk01cOnjZTf1jvqg5X/exec">
-                  <div class="mb-3">
-                      <label for="applicantName" class="form-label">Your Name</label>
-                      <input type="text" class="form-control" id="applicantName" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="applicantEmail" class="form-label">Your Email</label>
-                      <input type="email" class="form-control" id="applicantEmail" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="resume" class="form-label">Upload Resume</label>
-                      <input type="file" class="form-control" id="resume" required>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit Application</button>
-              </form>
-          </div>
-      </div>
-  </div>
-</div>
-<!-- Job Card with Modal Trigger -->
-<div class="col-lg-4">
-  <div class="job-card" data-bs-toggle="modal" data-bs-target="#jobModal1">
-      <h3>Web Developer</h3>
-      <p>Location: Remote</p>
-      <p>Responsibilities: Develop and maintain web applications.</p>
-      <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-      <a href="#" class="btn btn-primary">Apply Now</a>
-  </div>
-</div>
-
-<!-- Job Details Modal -->
-<div class="modal fade" id="jobModal1" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="jobModalLabel">Web Developer</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p><strong>Location:</strong> Remote</p>
-              <p><strong>Responsibilities:</strong> Develop and maintain web applications, collaborate with designers and stakeholders.</p>
-              <p><strong>Requirements:</strong> Proficient in HTML, CSS, JavaScript, and PHP.</p>
-              <form method="post" action="https://script.google.com/macros/s/AKfycby2ck-gSFxx7XPQw6DQlnsR1JUB4dNO0nCfciMkw4bHNuhVHRtk01cOnjZTf1jvqg5X/exec">
-                  <div class="mb-3">
-                      <label for="applicantName" class="form-label">Your Name</label>
-                      <input type="text" class="form-control" id="applicantName" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="applicantEmail" class="form-label">Your Email</label>
-                      <input type="email" class="form-control" id="applicantEmail" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="resume" class="form-label">Upload Resume</label>
-                      <input type="file" class="form-control" id="resume" required>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit Application</button>
-              </form>
-          </div>
-      </div>
-  </div>
-</div>
 
                 </div>
             </div>
