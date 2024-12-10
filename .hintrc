@@ -11,5 +11,11 @@
         "link-name": "off"
       }
     ]
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not chrome <= 109",
+    "not ios_saf <= 15.8"
+  ]
 }
