@@ -1147,9 +1147,9 @@ section,
 }
 
 
-.img-fluid-cs{
-  width: auto;
-  height: 30%;
+.img_cs{
+  width: 55%;
+  height: auto;
   margin-left: 30%;
 }
 /*--------------------------------------------------------------
