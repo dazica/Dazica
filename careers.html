@@ -97,6 +97,7 @@
                     <li><a href="./#contact">Contact</a></li>
                     <li><a href="./careers.html" class="active">Careers</a></li>
                 </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
         </div>
     </header>
@@ -128,25 +129,26 @@
     <div class="job-card border shadow-sm rounded p-4 mb-4" style="transition: transform 0.3s ease, box-shadow 0.3s ease;">
       <h3 class="h5 text-primary mb-3">Cybersecurity Architect</h3>
       <p class="text-muted"><i class="bi bi-geo-alt"></i> Location: <strong>Noida</strong></p>
+      <p><strong>Job Id:</strong> DS0001</p>
       <p><strong>No. of Positions:</strong> 01</p>
       <p><strong>Responsibilities:</strong> 
         <ul>
             <li><strong>Design Security Architecture:</strong> Develop and implement security frameworks, protocols, and systems to protect 
-                the organization's networks and data from internal and external threats.
+                the organization's networks and data from internal and external threats.<a href="#" data-bs-toggle="modal" data-bs-target="#jobModal1">Read more...</a>
             </li>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#jobModal1">Read more...</a>
+            
         </ul>
         </p>
       <p><strong>Requirements:</strong>
     <ul>
-        <li>Bachelor’s degree in Computer Science, Information Security, or a related field. Master’s degree preferred.</li>
-        <a href="#" data-bs-toggle="modal" data-bs-target="#jobModal1">Read more...</a>
+        <li>Bachelor’s degree in Computer Science, Information Security, or a related field. Master’s degree preferred.<a href="#" data-bs-toggle="modal" data-bs-target="#jobModal1">Read more...</a></li>
+        
     </ul>
     </p>
       <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#jobModal1">Apply Now</a>
     </div>
   </div>
-  
+
   <!-- Job Details Modal -->
   <div class="modal fade" id="jobModal1" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -156,8 +158,8 @@
         </div>
         <div class="card-body">
             <h2>Job Title: Cybersecurity Architect</h2>
-            <p><strong>Location:</strong> Noida</p>
-            
+            <p class="text-muted"><i class="bi bi-geo-alt"></i> Location: <strong>Noida</strong></p>
+            <p><strong>Job Id:</strong> DS0001</p>
             <h3>Job Role:</h3>
             <p>The Cybersecurity Architect is responsible for designing and implementing robust security infrastructures to protect an organization’s information systems. This role involves collaborating with IT teams to identify potential vulnerabilities, create security policies, and oversee the deployment of cybersecurity measures. The Cybersecurity Architect ensures that all systems, networks, and applications are secure from cyber threats while maintaining compliance with industry standards.</p>
             
@@ -269,29 +271,6 @@
                 <li><a href="#">Graphic Design</a></li>
               </ul>
             </div>
-  
-            <!-- <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Hic solutasetp</h4>
-              <ul>
-                <li><a href="#">Molestiae accusamus iure</a></li>
-                <li><a href="#">Excepturi dignissimos</a></li>
-                <li><a href="#">Suscipit distinctio</a></li>
-                <li><a href="#">Dilecta</a></li>
-                <li><a href="#">Sit quas consectetur</a></li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Nobis illum</h4>
-              <ul>
-                <li><a href="#">Ipsam</a></li>
-                <li><a href="#">Laudantium dolorum</a></li>
-                <li><a href="#">Dinera</a></li>
-                <li><a href="#">Trodelas</a></li>
-                <li><a href="#">Flexo</a></li>
-              </ul>
-            </div> -->
-  
           </div>
         </div>
       </div>
@@ -324,7 +303,7 @@
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   
     <!-- Preloader -->
-    <!-- <div id="preloader"></div> -->
+    <div id="preloader"></div>
   
     <!-- Vendor JS Files -->
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
