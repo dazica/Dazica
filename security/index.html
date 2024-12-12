@@ -33,35 +33,34 @@
       padding: 0;
       font-family: Arial, sans-serif;
       color: white;
-      /* text-align: center; */
     }
 
-    .header{
-    color: var(--default-color);
-    background-color: #010026;
-    opacity: 100%;
-    padding: 20px 0;
-    transition: all 0.5s;
-    z-index: 997;
+    .header {
+      color: var(--default-color);
+      background-color: #010026;
+      opacity: 100%;
+      padding: 20px 0;
+      transition: all 0.5s;
+      z-index: 997;
     }
 
-    .navmenu ul li a{
+    .navmenu ul li a {
       color: white;
     }
 
-    .footer{
-    color: var(--default-color);
-    background-color: #010026;
-    font-size: 14px;
-    position: relative;
-    bottom: -24px;
+    .footer {
+      color: var(--default-color);
+      background-color: #010026;
+      font-size: 14px;
+      position: relative;
+      bottom: -24px;
     }
-    
-    .footer .footer-top{
-    background-color: 
-        color-mix(in srgb, #010026, white 3%);
-    padding-top: 50px;
+
+    .footer .footer-top {
+      background-color: color-mix(in srgb, #010026, white 3%);
+      padding-top: 50px;
     }
+
     /* Video Background */
     .video-bg {
       position: fixed;
@@ -75,7 +74,7 @@
 
     .video-bg video {
       position: absolute;
-      top: 60%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       min-width: 100%;
@@ -92,19 +91,22 @@
       align-items: center;
       height: 100vh;
       background: rgba(0, 0, 0, 0.5);
+      padding: 20px; /* Added padding for smaller screens */
     }
 
     h1 {
-      font-size: 500%;
+      font-size: 5rem; /* Adjusted for responsiveness */
       font-weight: 600;
       margin-bottom: 1rem;
       color: rgb(255, 255, 255);
+      text-align: center; /* Centered for smaller screens */
     }
 
     p {
       font-size: 1.2rem;
       max-width: 800px;
       line-height: 1.6;
+      text-align: center; /* Centered for smaller screens */
     }
 
     .services {
@@ -121,6 +123,8 @@
       padding: 20px;
       width: 300px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      flex: 1 1 200px; /* Allow flexibility */
+      max-width: 100%; /* Ensure it doesn't exceed the container */
     }
 
     .service h3 {
@@ -140,7 +144,44 @@
     .service ul li {
       margin-bottom: 10px;
     }
-  </style>
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3rem; /* Smaller font size for tablets */
+      }
+
+      p {
+        font-size: 1rem; /* Smaller font size for tablets */
+      }
+
+      .service {
+        width: 90%; /* Full width for mobile */
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.5rem; /* Even smaller for mobile */
+      }
+
+      p {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+      }
+
+      .header {
+        padding: 10px 0; /* Less padding for mobile */
+      }
+
+      .footer {
+        font-size: 12px; /* Smaller footer text */
+ }
+
+      .footer .footer-top {
+        padding-top: 30px; /* Less padding for mobile */
+      }
+    }
+</style>
 </head>
 <body>
   <div class="video-bg">
