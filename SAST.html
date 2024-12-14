@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Service Details | Dazica Service</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/DS_Logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+        <a href="./#hero?home" class="logo d-flex align-items-center me-auto me-xl-0">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="assets/img/DS_Logo.png" alt="DS_logo">
+            <span>Dazica&nbsp;</span>
+            <h1 class="sitename">Services</h1>
+          </a>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="./#hero?home">Home</a></li>
+                <li><a href="./#about">About</a></li>
+                <li><a href="./#services">Services</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./#contact">Contact</a></li>
+                <li><a href="./careers.html">Careers</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+    </div>
+</header>
+<main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title">
+    <div class="container d-lg-flex justify-content-between align-items-center">
+      <h1 class="mb-2 mb-lg-0">SAST Solutions</h1>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#services">Services</a></li>
+          <li class="current">Static Application Security Testing (SAST)</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
+
+  <!-- Service Details Section -->
+  <section id="service-details" class="service-details section">
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="services-list">
+            <a href="#overview" onclick="toggle('overview', event)">Overview</a>
+            <a href="#features" onclick="toggle('features', event)">Key Features</a>
+            <a href="#benefits" onclick="toggle('benefits', event)">Benefits</a>
+            <a href="#challenges" onclick="toggle('challenges', event)">Challenges of SAST</a>
+            <a href="#implementation" onclick="toggle('implementation', event)">Implementation Process</a>
+            <a href="#faq" onclick="toggle('faq', event)">FAQs</a>
+          </div>
+
+          <h4>Your Partner in Secure Code</h4>
+          <p>Application security testing makes applications more resilient to security threats and identifies weaknesses and vulnerabilities in application source code. 
+            Initial days software code testing was done manually however as organizations matured and software’s became modular in nature and more and more open-source 
+            components being used large number of unknown vulnerabilities started surfacing in, the threat vector spectrum is broadened. The need was 
+            felt for automated testing tools so organizations started using a wide variety of tools to test the source code before applications are launched in production environments. </p>
+        </div>
+
+        <!-- Overview -->
+        <div class="col-lg-8" id="overview" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/img/SAST/overview.png" alt="" class="img_cs services-img">
+          <h3>Overview</h3>
+          <p>SAST is an integral part of application security for more than 15 years. Considering application vulnerabilities will continue to be the most 
+            common external cause of attack it is safe to say SAST will have a long road ahead. Year 2019 report of Forrester shows the majority of external 
+            attacks were carried out by exploiting software vulnerabilities (42%) contribution or via web applications which contributed 35% to breaches. 
+            It is a white box testing methodology where source code is analysed from inside out while other components are at rest. </p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> <span><strong>Code-Level Security:</strong> Find and fix flaws at the source before they escalate.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span><strong>Shift-Left Approach:</strong> Integrates security checks early in the SDLC, saving time and cost.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span><strong>Automated Insights:</strong> Leverages automation to detect vulnerabilities efficiently and consistently.</span></li>
+          </ul>
+        </div>
+
+        <!-- Key Features -->
+        <div class="col-lg-8" id="features" data-aos="fade-up" data-aos-delay="200" style="display: none;">
+          <img src="assets/img/SAST/SAST-features.png" alt="" class="img_cs services-img">
+          <h3>Key Features</h3>
+          <p>Our SAST services are designed to provide unparalleled visibility into your application's security posture. Here’s what sets us apart:</p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> <span><strong>Deep Vulnerability Detection:</strong> Identify complex vulnerabilities, such as those involving business logic errors.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span><strong>Secure Coding Practices:</strong> Promote best practices in application development through actionable insights.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span><strong>Scalable Solutions:</strong> Suitable for projects of all sizes, from small apps to enterprise-grade systems.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span><strong>Integration Ready:</strong> Compatible with popular IDEs, CI/CD pipelines, and development workflows.</span></li>
+          </ul>
+        </div>
+
+        <!-- Benefits -->
+        <div class="col-lg-8" id="benefits" data-aos="fade-up" data-aos-delay="200" style="display: none;">
+          <img src="assets/img/SAST/SAST-benefits.png" alt="" class="img_cs services-img">
+          <h3>Benefits</h3>
+          <p>SAST helps organizations enhance their security posture while ensuring compliance. Key benefits include:</p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> <span><strong>Risk Mitigation:</strong> Identify and eliminate vulnerabilities before they become a liability.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span><strong>Improved Developer Awareness:</strong> Educates developers on secure coding principles.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span><strong>Regulatory Compliance:</strong> Adhere to standards like OWASP Top 10, GDPR, and PCI DSS.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span><strong>Enhanced Application Trust:</strong> Build user confidence with secure, reliable applications.</span></li>
+          </ul>
+        </div>
+
+        <!-- Challenges -->
+        <div class="col-lg-8" id="challenges" data-aos="fade-up" data-aos-delay="200" style="display: none;">
+          <img src="assets/img/SAST/SAST-challenges.png" alt="" class="img_cs services-img">
+          <h3>Challenges of SAST</h3>
+          <p>Despite its effectiveness, implementing SAST can come with challenges:</p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> <span><strong>False Positives:</strong> High false-positive rates can overwhelm teams if tools are not tuned properly.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span><strong>Time-Consuming:</strong> Scanning large codebases can take time and impact deadlines without optimized tools.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span><strong>Initial Costs:</strong> Requires investment in tools and training for maximum effectiveness.</span></li>
+          </ul>
+        </div>
+
+        <!-- Implementation Process -->
+        <div class="col-lg-8" id="implementation" data-aos="fade-up" data-aos-delay="200" style="display: none;">
+          <img src="assets/img/SAST/SAST-implementation.png" alt="" class="img_cs services-img">
+          <h3>Implementation Process</h3>
+          <p>We follow a structured approach to SAST implementation to ensure seamless integration into your workflows:</p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> <strong>Requirement Analysis:</strong> Understand the scope and security objectives of your project.</li>
+            <li><i class="bi bi-check-circle"></i> <strong>Tool Selection:</strong> Choose the most suitable SAST tools for your application stack.</li>
+            <li><i class="bi bi-check-circle"></i> <strong>Integration:</strong> Embed SAST into your CI/CD pipelines for automated testing.</li>
+            <li><i class="bi bi-check-circle"></i> <strong>Training:</strong> Equip developers with training to interpret and act on SAST results.</li>
+            <li><i class="bi bi-check-circle"></i> <strong>Ongoing Support:</strong> Provide continuous monitoring and support for evolving security needs.</li>
+          </ul>
+        </div>
+
+        <!-- FAQs -->
+        <div class="col-lg-8" id="faq" data-aos="fade-up" data-aos-delay="200" style="display: none;">
+          <img src="./assets/img/SAST/SAST-faq.png" alt="SAST-faq.png" class="img_cs services-img" style="height:400px; width: auto;">
+          <h3>Frequently Asked Questions (FAQs)</h3>
+          <ul>
+            <li><strong>Q: How does SAST differ from DAST?</strong></li>
+            <p>A: While SAST analyzes static code for vulnerabilities, DAST tests applications dynamically during execution for security weaknesses.</p>
+
+            <li><strong>Q: Can SAST handle third-party libraries?</strong></li>
+            <p>A: Yes, some SAST tools include third-party dependency scanning to identify vulnerabilities in external libraries.</p>
+
+            <li><strong>Q: Is SAST suitable for agile development?</strong></li>
+            <p>A: Absolutely! SAST integrates seamlessly with CI/CD pipelines, supporting agile and DevOps workflows.</p>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- /Service Details Section -->
+
+</main>
+
+
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="./#hero" class="logo d-flex align-items-center">
+              <span class="sitename">Dazica Service Private Limited</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>A60, sector -2, Noida, Uttar Pradesh - 201301, India</p>
+              <p class="mt-3"><strong>Phone:</strong> <a class="email-link1" href="tel:+91-8743805893">+91-8743805893</a></p>
+              <p><strong>Email:</strong> <span><a class="email-link" onclick="sendEmail()">info@dazicaservice.com</a></span></p>
+            </div>
+          </div>
+<!-- Send Email to dazicaservice@gmail.com instead of info@dazicaservice.com-->
+          <script>
+            function sendEmail() {
+              window.location.href = "mailto:dazicaservices@gmail.com";
+            }
+          </script>
+
+
+          <div class="col-lg-2 col-md-3 footer-links"  style="margin-left: 30%;">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="./#hero">Home</a></li>
+              <li><a href="./#about">About us</a></li>
+              <li><a href="./#services">Services</a></li>
+              <li><a href="./termsOfService.html">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="./customer-support.html">Customer Support</a></li>
+              <li><a href="./Cybersecurity-solutions.html">Cybersecurity</a></li>
+              <li><a href="#">Recruitment (Staffing Resources)</a></li>
+              <li><a href="#">Penetration Testing</a></li>
+              <li><a href="#">Vulnerability Assessment</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © Copyright <strong><span>Dazica Service Private Limited</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by <a href="./#hero">Dazica Service</a>
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="./assets/js/main.js"></script>
+
+  <!-- <script src="https://www.gptbots.ai/widget/we0moog0qejoawinjoxa0il/chat.js"></script> -->
+   
+  <script
+  src="https://www.chatbase.co/embed.min.js"
+  chatbotId="zS115prGN7BldBlSW_ikI"
+  domain="www.chatbase.co"
+  defer>
+  </script>
+
+  <script>
+
+function toggle(sectionId, event) {
+  // Prevent the default behavior of the <a> tag
+  if (event) {
+    event.preventDefault();
+  }
+
+  // Hide all sections
+  const sections = document.querySelectorAll('.col-lg-8');
+  sections.forEach((section) => {
+    section.style.display = 'none';
+  });
+
+  // Show the selected section
+  const selectedSection = document.getElementById(sectionId);
+  if (selectedSection) {
+    selectedSection.style.display = 'block';
+  }
+
+  // Remove 'active' class from all links
+  const links = document.querySelectorAll('.services-list a');
+  links.forEach((link) => {
+    link.classList.remove('active');
+  });
+
+  // Add 'active' class to the clicked link
+  const clickedLink = document.querySelector(`.services-list a[href="#${sectionId}"]`);
+  if (clickedLink) {
+    clickedLink.classList.add('active');
+  }
+}
+
+  
+  </script>
+</body>
+
+</html>
