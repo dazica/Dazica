@@ -45,7 +45,6 @@
       color: white;
     }
     .navmenu{
-      /* align-items: center; */
       right: 43%;
     }
     .footer {
@@ -53,7 +52,6 @@
       background-color: #010026;
       font-size: 14px;
       position: relative;
-      bottom: -24px;
     }
 
     .footer .footer-top {
@@ -65,14 +63,18 @@
     /* Video Background */
     .video-bg {
       position: fixed;
-      top: 0;
+      top: 5%;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       overflow: hidden;
-      z-index: -1;
+      z-index: 0;
     }
 
+    section{
+      padding: 0;
+      color: white;
+    }
     .video-bg video {
       position: absolute;
       top: 50%;
@@ -83,16 +85,44 @@
       object-fit: cover;
     }
 
-    .content {
+    .container1 {
       position: relative;
       z-index: 1;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 20px; /* Added padding for smaller screens */
+      width: 100%;
+    }
+
+    .leftPanel{
+      width: 75%;
+      overflow-y: scroll;
+      height: 100vh;
+      padding: 5%;
+      border-right: 3px solid white;
+      text-align: left;
+    }
+    p{
+      text-align: center;
+      font-size: 1.2rem;
+      max-width: 100%;
+      line-height: 1.6;
+    }
+    
+    .leftPanel p{
+      text-align: center;
+      font-size: 1.2rem;
+      max-width: 100%;
+      line-height: 1.6;
+    }
+    .leftPanel::-webkit-scrollbar{
+      display: none;
+    }
+    .rightPanel{
+      width: 25%;
+      height: 100vh;
     }
 
     h1 {
@@ -101,13 +131,6 @@
       margin-bottom: 1rem;
       color: rgb(255, 255, 255);
       text-align: center; /* Centered for smaller screens */
-    }
-
-    p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      line-height: 1.6;
-      /* text-align: center; Centered for smaller screens */
     }
 
     .services {
@@ -152,6 +175,9 @@
         font-size: 3rem; /* Smaller font size for tablets */
       }
 
+      .video-bg{
+        top: 0;
+      }
       p {
         font-size: 1rem; /* Smaller font size for tablets */
       }
@@ -193,7 +219,6 @@
       <source src="../assets/img/D_Security/earth.mp4" type="video/mp4">
     </video>
   </div>
-
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
@@ -217,8 +242,10 @@
         </nav>
     </div>
 </header>
-
-  <div class="content">
+<section>
+ <div class="container1">
+ 
+  <div class="leftPanel">
     <h1>Welcome to Dazica Security</h1>
     <p>Protecting your digital landscape with cutting-edge cybersecurity solutions. Our services include threat detection, data protection, incident response, and end-to-end security.</p>
 
@@ -269,7 +296,14 @@
     </div>
   </div>
 
-  <footer id="footer" class="footer dark-background">
+  <div class="rightPanel">
+    <div class="news" style="padding-left: 3%;padding-top: 3%; background-color: color-mix(in srgb, #000000, white 10%);">
+      <strong>Leatest Releases:</strong>
+    </div>
+  </div>
+ </div>
+</section>
+<footer id="footer" class="footer dark-background">
 
     <div class="footer-top">
       <div class="container">
