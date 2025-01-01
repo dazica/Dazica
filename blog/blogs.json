@@ -1,0 +1,84 @@
+[
+    {
+      "title": "Dolorum optio tempore voluptas dignissimos",
+      "category": "Technology",
+      "author": "Maria Doe",
+      "date": "2022-01-01",
+      "image": "../assets/img/blog/blog-1.jpg",
+      "authorImage": "../assets/img/blog/blog-author.jpg",
+      "link": "./blog-details.html"
+    },
+    {
+      "title": "Nisi magni odit consequatur autem nulla dolorem",
+      "category": "Cyber Security",
+      "author": "Allisa Mayer",
+      "date": "2022-06-05",
+      "image": "../assets/img/blog/blog-2.jpg",
+      "authorImage": "../assets/img/blog/blog-author-2.jpg",
+      "link": "./blog-details.html"
+    },
+    {
+      "title": "Nisi magni odit consequatur autem nulla dolorem",
+      "category": "Technology",
+      "author": "Allisa Mayer",
+      "date": "2022-06-05",
+      "image": "../assets/img/blog/blog-2.jpg",
+      "authorImage": "../assets/img/blog/blog-author-2.jpg",
+      "link": "./blog-details.html"
+    },
+    {
+      "title": "Nisi magni odit consequatur autem nulla dolorem",
+      "category": "Technology",
+      "author": "Allisa Mayer",
+      "date": "2022-06-05",
+      "image": "../assets/img/blog/blog-2.jpg",
+      "authorImage": "../assets/img/blog/blog-author-2.jpg",
+      "link": "./blog-details.html"
+    },
+    {
+      "title": "Nisi magni odit consequatur autem nulla dolorem",
+      "category": "Sports",
+      "author": "Allisa Mayer",
+      "date": "2022-06-05",
+      "image": "../assets/img/blog/blog-2.jpg",
+      "authorImage": "../assets/img/blog/blog-author-2.jpg",
+      "link": "./blog-details.html"
+    },
+    {
+      "title": "Nisi magni odit consequatur autem nulla dolorem",
+      "category": "Sports",
+      "author": "Allisa Mayer",
+      "date": "2022-06-05",
+      "image": "../assets/img/blog/blog-2.jpg",
+      "authorImage": "../assets/img/blog/blog-author-2.jpg",
+      "link": "./blog-details.html"
+    },
+    {
+      "title": "Nisi magni odit consequatur autem nulla dolorem",
+      "category": "Sports",
+      "author": "Allisa Mayer",
+      "date": "2022-06-05",
+      "image": "../assets/img/blog/blog-2.jpg",
+      "authorImage": "../assets/img/blog/blog-author-2.jpg",
+      "link": "./blog-details.html"
+    },
+    {
+      "title": "Nisi magni odit consequatur autem nulla dolorem",
+      "category": "Sports",
+      "author": "Allisa Mayer",
+      "date": "2022-06-05",
+      "image": "../assets/img/blog/blog-2.jpg",
+      "authorImage": "../assets/img/blog/blog-author-2.jpg",
+      "link": "./blog-details.html"
+    },
+    {
+      "title": "Nisi magni odit consequatur autem nulla dolorem",
+      "category": "Sports",
+      "author": "Allisa Mayer",
+      "date": "2022-06-05",
+      "image": "../assets/img/blog/blog-2.jpg",
+      "authorImage": "../assets/img/blog/blog-author-2.jpg",
+      "link": "./blog-details.html"
+    }
+  ]
+  
