@@ -1001,31 +1001,120 @@ section,
 /*--------------------------------------------------------------
 # Departments Section
 --------------------------------------------------------------*/
+/* General Styles */
 .Departments {
   font-family: 'Arial', sans-serif;
   background-color: #f9f9f9;
   padding: 50px 0;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.subsidiary{
+.subsidiary {
   color: #000000;
   padding-bottom: 5%;
   font-weight: 500;
   font-size: 3rem;
   font-family: var(--heading-font);
-
+  text-align: center;
 }
 
-.logo_3x{
+.logo_3x {
   vertical-align: middle;
   width: 50px;
 }
+
 .tm {
   font-size: 20px;
   vertical-align: super;
   margin-left: 5px;
   position: relative;
+}
+
+/* Flexbox Layout */
+.row1 {
+  display: flex;
+  flex-wrap: wrap; /* Ensure wrapping to new rows */
+  justify-content: center; /* Center the cards */
+  margin: 0 auto;
+  gap: 15px; /* Add spacing between rows and columns */
+}
+
+/* Card Styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%; /* Full width by default */
+  max-width: 300px; /* Limit card width */
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .cover h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3498db;
+  text-align: center;
+}
+
+.card-back {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.card-back a {
+  display: inline-block;
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card-back a:hover {
+  background-color: #1b7292;
+}
+
+/* Responsive Styles */
+
+/* Small Devices (up to 576px) */
+@media (max-width: 576px) {
+  .col-md-4, .col-sm-6, .col-xs-12 {
+    flex: 0 0 100%; /* Full width for small screens */
+    max-width: 100%;
+  }
+}
+
+/* Medium Devices (up to 768px) */
+@media (max-width: 768px) {
+  .col-md-4, .col-sm-6 {
+    flex: 0 0 50%; /* Half width for tablets */
+    max-width: 50%;
+  }
+}
+
+/* Large Devices (992px and up) */
+@media (min-width: 992px) {
+  .col-md-4 {
+    flex: 0 0 33.33%; /* One-third width for desktops */
+    max-width: 33.33%;
+  }
+}
+
+/* Extra Large Devices (1200px and up) */
+@media (min-width: 1200px) {
+  .col-md-4 {
+    flex: 0 0 25%; /* Cards take one-fourth width */
+    max-width: 25%;
+  }
 }
 
 @keyframes gradient {
